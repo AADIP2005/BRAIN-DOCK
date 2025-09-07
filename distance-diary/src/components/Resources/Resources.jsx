@@ -17,7 +17,7 @@ const Resources = () => {
     <section className="min-h-screen bg-dark text-light py-16 px-6">
       <div className="container mx-auto">
         <h1 className="text-4xl md:text-5xl font-extrabold text-center mb-12">
-          📚 Explore Resources
+          Explore Resources
         </h1>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

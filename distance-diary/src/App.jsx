@@ -13,6 +13,8 @@ import CSEAI from './components/Resources/CSE/cseai';
 import ECE from './components/Resources/ece';
 import ECEAI from './components/Resources/eceai';
 import MAE from './components/Resources/mae';
+import AIML from './components/Resources/aiml';
+import IT from './components/Resources/it';
 import Readit from './components/readit';
 
 const App = () => {
@@ -34,6 +36,8 @@ const App = () => {
             <Route path="/about" element={<About/>}/>
             <Route path="/start" element={<Start/>}/>
             <Route path="/readit" element={<Readit/>}/>
+            <Route path="/aiml" element={<AIML/>}/>
+             <Route path="/it" element={<IT/>}/>
           </Routes>
         </main>
 

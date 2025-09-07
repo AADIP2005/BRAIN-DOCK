@@ -1,12 +1,10 @@
 import React, { useState } from "react";
-import bannerImg from "../../../assets/banner.png";
+import bannerImg from "../../assets/itbanner.png";
 
 const cseData = {
   Semester1: {
     syllabus:
       "Covers foundational mathematics, programming basics in C, and introduction to engineering concepts.",
-    syllabusLink:
-      "https://drive.google.com/file/d/1D6pTm6KVX-TKCrBsI4JGt8S0RahAOr5N/view?usp=drive_link",
     subjects: {
       "Maths-I": {
         Unit1: ["Notes", "Lecture Video", "Assignments"],
@@ -21,8 +19,6 @@ const cseData = {
   Semester2: {
     syllabus:
       "Focuses on Data Structures, Digital Logic, and problem-solving techniques.",
-    syllabusLink:
-      "https://drive.google.com/drive/folders/1TfFOc__0GL7ov8lw_yFWFD-M8wzpxLN9?usp=drive_link",
     subjects: {
       "Data Structures": {
         Unit1: ["Notes", "Lecture Slides"],
@@ -37,8 +33,6 @@ const cseData = {
   Semester3: {
     syllabus:
       "Computer Organization, Object-Oriented Programming, and core electronics basics.",
-    syllabusLink:
-      "https://drive.google.com/file/d/your-sem3-link/view?usp=drive_link",
     subjects: {
       "Computer Organization": {
         Unit1: ["Notes", "Diagrams"],
@@ -49,8 +43,6 @@ const cseData = {
   Semester4: {
     syllabus:
       "Operating Systems and advanced algorithms with hands-on lab components.",
-    syllabusLink:
-      "https://drive.google.com/file/d/your-sem4-link/view?usp=drive_link",
     subjects: {
       "Operating Systems": {
         Unit1: ["Notes", "Lecture Slides"],
@@ -60,8 +52,6 @@ const cseData = {
   },
   Semester5: {
     syllabus: "Databases, Software Engineering, and Web Technologies.",
-    syllabusLink:
-      "https://drive.google.com/file/d/your-sem5-link/view?usp=drive_link",
     subjects: {
       "Database Management Systems": {
         Unit1: ["Notes", "Query Examples"],
@@ -71,8 +61,6 @@ const cseData = {
   },
   Semester6: {
     syllabus: "Networks, Artificial Intelligence, and advanced electives.",
-    syllabusLink:
-      "https://drive.google.com/file/d/your-sem6-link/view?usp=drive_link",
     subjects: {
       "Computer Networks": {
         Unit1: ["Notes", "Lecture Slides"],
@@ -82,8 +70,6 @@ const cseData = {
   },
   Semester7: {
     syllabus: "Compiler Design, Distributed Systems, and elective choices.",
-    syllabusLink:
-      "https://drive.google.com/file/d/your-sem7-link/view?usp=drive_link",
     subjects: {
       "Compiler Design": {
         Unit1: ["Notes", "Practice Questions"],
@@ -94,8 +80,6 @@ const cseData = {
   Semester8: {
     syllabus:
       "Machine Learning, Data Science, and project work for industry readiness.",
-    syllabusLink:
-      "https://drive.google.com/file/d/your-sem8-link/view?usp=drive_link",
     subjects: {
       "Machine Learning": {
         Unit1: ["Lecture Notes", "Datasets"],
@@ -105,7 +89,7 @@ const cseData = {
   },
 };
 
-const CSE = () => {
+const IT = () => {
   const [selectedSem, setSelectedSem] = useState(null);
   const [selectedSubject, setSelectedSubject] = useState(null);
   const [darkMode, setDarkMode] = useState(false);
@@ -125,7 +109,7 @@ const CSE = () => {
         />
         <div className="absolute inset-0 flex items-center justify-center bg-black/25">
           <h1 className="text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg">
-            CSE Resources
+            IT Resources
           </h1>
         </div>
 
@@ -187,7 +171,12 @@ const CSE = () => {
 
               {/* Drive Link Button */}
               <button
-                onClick={() => window.open(cseData[selectedSem].syllabusLink, "_blank")}
+                onClick={() =>
+                  window.open(
+                    "https://drive.google.com/file/d/1D6pTm6KVX-TKCrBsI4JGt8S0RahAOr5N/view?usp=drive_link",
+                    "_blank"
+                  )
+                }
                 className={`px-5 py-2 rounded-lg font-semibold transition
                   ${
                     darkMode
@@ -285,10 +274,4 @@ const CSE = () => {
   );
 };
 
-export default CSE;
-
-
-
-
-
-
+export default IT;

@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+{/*import photo from '../../assests/components/me.jpg';}*/}
+{/*import aditiImg from "../assets/me.jpg"; */}
+
 
 const About = () => {
   const [feedback, setFeedback] = useState("");
@@ -16,15 +19,15 @@ const About = () => {
   const founder = {
     name: "Bhavya Sinha",
     thought: "Sharing resources makes learning easier for everyone ✨",
-    role: "Founder",
-    image: "/assets/contributors/aditi.jpg",
+    role: "Co-Founder",
+    image: "/assets/components/aditi.jpg",
   };
 
   const coFounder = {
     name: "Aditi Pandit",
     thought: "BrainDock is the bridge between students and knowledge 🚀",
     role: "Co-Founder",
-    image: "/assets/contributors/rahul.jpg",
+    image: "aditiImg",
   };
 
   return (
@@ -32,12 +35,12 @@ const About = () => {
       <div className="max-w-5xl mx-auto text-center">
         {/* About Section */}
         <h1 className="text-4xl md:text-5xl font-extrabold mb-6 text-primary">
-          About BrainDock 🚀
+          About IGDTUW Brain-Dock
         </h1>
         <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-12">
           <strong>BrainDock</strong> is an all-round website built exclusively
           for IGDTUW students. It is a one-stop platform where you can dock all
-          your academic needs — from
+          your academic needs from
           <span className="text-primary font-semibold"> exam resources</span>,
           <span className="text-secondary font-semibold"> projects</span>, and
           <span className="text-primary font-semibold"> placement preparation</span>
@@ -51,7 +54,7 @@ const About = () => {
 
         {/* Feedback Section */}
         <div className="bg-white p-8 rounded-2xl shadow-lg max-w-2xl mx-auto mb-16">
-          <h2 className="text-2xl font-bold mb-4">We’d love your Feedback 💬</h2>
+          <h2 className="text-2xl font-bold mb-4">We’d love your Feedback </h2>
           {submitted ? (
             <p className="text-green-600 font-semibold">
               ✅ Thank you for your feedback!
